@@ -51,6 +51,9 @@ mkdir ~/opt
 mkdir ~/opt/bin
 cp ./bin/* ~/opt/bin
 
+mkdri .zfuncs
+cp ./zfuncs/* ~/.zfuncs
+
 echo "Step: Sourcing zsh"
 source ~/.zshrc
 
