@@ -44,6 +44,9 @@ else
   git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 fi
 
+echo "Step: Install node js using nvm"
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
+
 echo "Step: Copying .zshrc"
 cp .zshrc ~/.zshrc
 
