@@ -1,0 +1,6 @@
+- shell:
+    - description: automatically setup the system environment.
+      command: ./setup.sh
+      stdout: true
+      stderr: true
+      quiet: false
