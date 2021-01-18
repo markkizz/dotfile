@@ -1,0 +1,137 @@
+{
+  "editor.fontFamily": "FiraCode Nerd Font",
+  "editor.fontLigatures": true,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "workbench.iconTheme": "material-icon-theme",
+  "material-icon-theme.folders.associations": {
+    "types": "typescript"
+  },
+  /* minimap */
+  "editor.minimap.renderCharacters": false,
+  "editor.minimap.maxColumn": 200,
+  "editor.minimap.showSlider": "always",
+  "editor.renderWhitespace": "none",
+  "editor.smoothScrolling": true,
+  "editor.cursorBlinking": "phase",
+  "editor.cursorSmoothCaretAnimation": true,
+  "files.insertFinalNewline": false,
+  "files.trimTrailingWhitespace": true,
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
+  "workbench.settings.enableNaturalLanguageSearch": false,
+  "vim.handleKeys": {
+    // "<C-c>": false,
+    // "<C-v>": false,
+    "<C-d>": false,
+    "<C-a>": false,
+    "<C-f>": false,
+    "<C-l>": false
+  },
+  "vim.statusBarColorControl": false,
+  /* emmet */
+  "emmet.showAbbreviationSuggestions": true,
+  "emmet.showExpandedAbbreviation": "always",
+  "emmet.syntaxProfiles": {
+    "vue-html": "html",
+    "vue": "html"
+  },
+  "emmet.includeLanguages": {
+    "vue-html": "html",
+    "vue": "html"
+  },
+  /* code format */
+  "editor.tabSize": 2,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.fixAll.tslint": true
+  },
+  "prettier.semi": false,
+  "prettier.singleQuote": true,
+  "eslint.format.enable": true,
+  "eslint.packageManager": "npm",
+  "eslint.run": "onType",
+  "stylint.packageManager": "yarn",
+  "vetur.format.defaultFormatter.html": "prettier",
+  "vetur.format.defaultFormatter.js": "prettier-eslint",
+  "[vue]": {
+    "editor.defaultFormatter": "octref.vetur"
+  },
+  "vetur.format.defaultFormatterOptions": {
+    "prettier": {
+      // Prettier option here
+      "singleQuote": true,
+      "semi": false
+    }
+  },
+  "eslint.validate": [
+    "vue",
+    "html",
+    "javascript",
+    "javascriptreact",
+    "typescript"
+  ],
+  "[javascript]": {
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+    // "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features",
+    "editor.codeActionsOnSave": {
+      "source.fixAll": true
+    }
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "window.zoomLevel": -1,
+  "tslint.packageManager": "yarn",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.tokenColorCustomizations": {
+    "[One Dark Pro Monokai Darker]": {
+      "textMateRules": [
+        {
+          "scope": "variable.other.readwrite",
+          "settings": {
+            "foreground": "#BBBBBB"
+          }
+        },
+        {
+          "scope": "variable.parameter",
+          "settings": {
+            "fontStyle": ""
+          }
+        },
+        {
+          "scope": "entity.name.type.class",
+          "settings": {
+            "foreground": "#43c4f7"
+          }
+        }
+      ]
+    }
+  },
+  "workbench.colorTheme": "One Monokai",
+  "terminal.integrated.rendererType": "dom",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "yaml.schemas": {
+    "file:///home/kittayot/.vscode/extensions/atlassian.atlascode-2.8.3/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+  },
+  "explorer.confirmDelete": false,
+  "material-icon-theme.activeIconPack": "vue_vuex",
+  "todo-tree.tree.showScanModeButton": false,
+  // GO_LANG
+  "git.autofetch": true,
+  "go.useLanguageServer": true,
+  "go.lintTool": "golangci-lint",
+  "tabnine.experimentalAutoImports": true
+}
