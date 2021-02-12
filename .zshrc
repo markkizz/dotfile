@@ -124,16 +124,20 @@ fpath=(
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 ########## PATH BIN ########### https://unix.stackexchange.com/questions/429169/how-to-make-custom-zsh-script-executable-automatically
-#Path to my own binary
+
+# Path to my own binary
 export BIN_PATH=${HOME}/opt/bin
+
+# Path to yarn global
+export YARN_PATH=$(yarn global bin)
 
 # Path to build go
 export GO_PATH=/usr/local/go/bin
+export GOPATH=$(go env GOPATH)
 
 # Merge executable PATH
 export PATH=${BIN_PATH}:${GO_PATH}:${PATH}
 
-export GOPATH=$(go env GOPATH)
 
 # C_CPP lib config
 export LD_LIBRARY_PATH=/usr/local/lib
@@ -144,5 +148,3 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-autoload -Uz gendate
