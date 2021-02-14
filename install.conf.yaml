@@ -1,3 +1,27 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.Brewfile: Brewfile
+    ~/.zshrc:
+      force: true
+      path: ./.zshrc
+      relink: true
+    ~/.dotfiles: .
+    ~/opt/bin/:
+      glob: true
+      path: bin/*
+      relink: true
+      create: true
+
+- create:
+    - ~/markkizz
+    - ~/markkizz/github
+    - ~/markkizz/NCP
+
 - shell:
     - description: automatically setup the system environment.
       command: ./setup.sh
