@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 echo "Installing linux dependencies..."
 
@@ -12,4 +12,4 @@ function install_from_package_list() {
 cd "$(dirname "$0")"
 
 # Install packages with apt-get
-install_from_package_list "essentials"
+install_from_package_list "packages"

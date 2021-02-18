@@ -12,7 +12,6 @@ sudo
 locales
 
 # Dependencies
-sqlite
 rlwrap
 expect
 
