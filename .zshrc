@@ -89,13 +89,9 @@ alias ll="ls -alh"
 alias ga="git add"
 alias mongo="~/Downloads/nosqlbooster4mongo*.AppImage"
 alias clearnode="find . -name "node_modules" -type d -prune -exec rm -rf '{}' +"
+
 # User configuration
 
-fpath=(
-    ~/.zfuncs
-    ~/.zfuncs/**/*~*/(CVS)#(/N)
-    "${fpath[@]}"
-)
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
