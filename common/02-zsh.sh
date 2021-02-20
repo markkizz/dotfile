@@ -1,6 +1,13 @@
 #!/usr/bin/env bash
 
-#Install oh my zsh
+echo "Installing zsh..."
+if [[ `uname` -eq 'Darwin' ]]
+then
+    brew install zsh
+else
+    sudo apt-get install zsh
+if
+
 echo "Installing oh_my_zsh..."
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
