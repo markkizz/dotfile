@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 
 echo "Installing zsh..."
-if [[ `uname` -eq 'Darwin' ]]
+if [[ `uname` == 'Darwin' ]]
 then
     brew install zsh
 else
     sudo apt-get install zsh
-if
+fi
 
 echo "Installing oh_my_zsh..."
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
