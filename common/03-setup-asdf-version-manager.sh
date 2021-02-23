@@ -11,14 +11,17 @@ setup_asdf() {
   fi
 
   # HACK: add asdf to PATH!
-  export ASDF_PATH="export PATH=\"\$PATH:$HOME/.asdf/bin\""
-  if [[ -f ~/.zshrc ]]
-  then
-    echo $ASDF_PATH >> ~/.zshrc
-    source ~/.zshrc
-  else
-    echo $ASDF_PATH >> ~/.bashrc
-  fi
+  export PATH="$PATH:$HOME/.asdf/bin"
+
+  # # HACK: add asdf to PATH!
+  # export ASDF_PATH="export PATH=\"\$PATH:$HOME/.asdf/bin\""
+  # if [[ -f ~/.zshrc ]]
+  # then
+  #   echo $ASDF_PATH >> ~/.zshrc
+  #   source ~/.zshrc
+  # else
+  #   echo $ASDF_PATH >> ~/.bashrc
+  # fi
 
   if ! command -v asdf
   then
