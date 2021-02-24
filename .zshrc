@@ -124,15 +124,15 @@ alias clearnode="find . -name "node_modules" -type d -prune -exec rm -rf '{}' +"
 # Path to my own binary
 export BIN_PATH=${HOME}/opt/bin
 
-# Path to yarn global
-export YARN_PATH=$(yarn global bin)
+# # Path to yarn global
+# export YARN_PATH=$(yarn global bin)
 
-# Path to build go
-export GO_PATH=/usr/local/go/bin
-export GOPATH=$(go env GOPATH)
+# # Path to build go
+# export GO_PATH=/usr/local/go/bin
+# export GOPATH=$(go env GOPATH)
 
-# Merge executable PATH
-export PATH=${BIN_PATH}:${GO_PATH}:${PATH}
+# # Merge executable PATH
+# export PATH=${BIN_PATH}:${GO_PATH}:${PATH}
 
 
 # C_CPP lib config
