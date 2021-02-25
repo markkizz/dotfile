@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 echo "Copying .zshrc"
-[[ ! -f ~/.zshrc ]] && cp ../.zshrc ~/.zshrc
+[[ ! -f ~/.zshrc ]] && ln -s ~/dotfiles/.zshrc ~/.zshrc
 
 echo "Installing zsh..."
 if [[ `uname` == 'Darwin' ]]
@@ -12,7 +12,7 @@ else
 fi
 
 echo "Installing oh_my_zsh..."
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" --unattended
 
 echo "Install zsh theme"
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
