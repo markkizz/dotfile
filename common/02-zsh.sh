@@ -14,6 +14,10 @@ echo "Install zsh theme"
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
 echo "Copying .zshrc"
-[[ ! -f ~/.zshrc ]] && ln -s ~/dotfiles/.zshrc ~/.zshrc
+if [[ -f ~/.zshrc ]]
+then
+    rm ~/.zshrc
+fi
+ln -s ~/dotfiles/.zshrc ~/.zshrc
 
 source ~/.zshrc
