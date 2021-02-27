@@ -24,10 +24,10 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 echo "+ Install zsh plugins"
 mkdir ~/zsh-plugins
 
-git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git ~/zsh-plugins/zsh-autocomplete
+git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git ~/.oh-my-zsh/custom/plugins/zsh-autocomplete
 echo "source ~/zsh-plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh" >> ~/.zshrc
 
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
 
 echo "+ Copying .zshrc"
