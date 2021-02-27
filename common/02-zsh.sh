@@ -21,6 +21,15 @@ file ~/fonts/MesloNf.ttf
 echo "+ Install zsh theme"
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
+echo "+ Install zsh plugins"
+mkdir ~/zsh-plugins
+
+git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git ~/zsh-plugins/zsh-autocomplete
+echo "source ~/zsh-plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh" >> ~/.zshrc
+
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
+
 echo "+ Copying .zshrc"
 if [[ -f ~/.zshrc ]]
 then
