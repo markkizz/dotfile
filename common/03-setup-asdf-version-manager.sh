@@ -5,7 +5,7 @@
 setup_asdf() {
   if ! test -e ~/.asdf
   then
-    git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.7.8 --quiet &> /dev/null
+    git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.8.0 --quiet &> /dev/null
   else
     echo "asdf is already installed!"
   fi
@@ -49,5 +49,7 @@ then
 else
   echo "🌟 Installing asdf package manager..."
   setup_asdf
+  printf " \n" >> ~./zshrc
+  printf "\n. $HOME/.asdf/asdf.sh\n" >> ~/.zshrc
   echo "✅ installed asdf!"
 fi

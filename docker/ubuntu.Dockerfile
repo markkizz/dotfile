@@ -7,6 +7,11 @@ RUN useradd -ms /bin/bash markkizz && \
     echo '%sudo ALL=(ALL) NOPASSWD' >> /etc/sudoers
 
 USER markkizz
-RUN git clone https://github.com/markkizz/.dotfile ~/dotfiles
+RUN mkdir -p $HOME/dotfiles
+WORKDIR $HOME/dotfiles
+COPY . .
+RUN find . -type f -iname "*.sh" -exec chmod +x {} \;
+RUN sudo chown -R markkizz .
+# RUN git clone https://github.com/markkizz/.dotfile ~/dotfiles
 
 CMD /bin/bash

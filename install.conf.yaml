@@ -16,6 +16,8 @@
       path: bin/*
       relink: true
       create: true
+    ~/.tool-version:
+      path: ./.tool-versions
 
 - create:
     - ~/markkizz

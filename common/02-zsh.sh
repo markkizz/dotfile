@@ -11,7 +11,7 @@ else
 fi
 
 echo "+ Installing oh_my_zsh..."
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended --keep-zshrc
 
 echo "+ Download and install font"
 mkdir ~/fonts
@@ -32,11 +32,12 @@ git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git ~/.
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 # echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
 
-echo "+ Copying .zshrc"
-if [[ -f ~/.zshrc ]]
-then
-    rm ~/.zshrc
-fi
-ln -s ~/dotfiles/.zshrc ~/.zshrc
+# echo "+ Copying .zshrc"
+# if [[ -f ~/.zshrc ]]
+# then
+#     # Remove default .zshrc from oh-my-zsh
+#     rm ~/.zshrc
+# fi
+# ln -s ./../.zshrc ~/.zshrc
 
 source ~/.zshrc
