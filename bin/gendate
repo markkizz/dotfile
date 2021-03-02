@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# Usage: gendate "2 mar" ->  Date: Tue Mar 2 19:42:17 2021 +0700
 day_month=$1
 current_time=$(date +'%T')
 ime_zone=$(date +'%z')
