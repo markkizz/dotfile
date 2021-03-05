@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-# TODO: Create manual setup flag eg. --manaul
-
 echo "🍰 bootstrapping system environment setup..."
 OS=$(bash ./utils/getos)
 
@@ -16,5 +14,5 @@ else
   ./setup-linux.sh
 fi
 
-GREEN='\033[0;32m'
-echo "${GREEN}***** Done!! ******"
+# GREEN='\033[0;32m'
+echo "**************** Done!! ****************"

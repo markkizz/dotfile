@@ -18,5 +18,7 @@ do
   #echo "$script"
 done
 
+echo "✅ All linux scripts are installed!"
+
 # automatically setup common CLI environment with scripts.
 ./setup-common.sh

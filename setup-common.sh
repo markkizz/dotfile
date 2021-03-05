@@ -17,3 +17,5 @@ for script in $git_configs
 do
   $script
 done
+
+echo "✅ All common scripts are installed!"
