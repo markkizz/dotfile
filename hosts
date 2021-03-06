@@ -1,0 +1,23 @@
+10.16.0.171  okd.nipacloud.local
+10.16.0.140    gitlab.nipa.cloud
+45.121.60.140 bn-core-service-nipa-ml-dev.app.nipa.cloud
+#10.16.0.125   bn-nipa-payment-dev.app.nipa.cloud payment-dev-api.app.nipa.cloud
+10.16.0.174 tracing-istio-system.app.nipacloud.local
+
+
+100.127.66.15 vayu.ktbcs.co.th vayuadmin.ktbcs.co.th
+119.31.112.174 phpmyadmin.playcloud.ais.co.th
+119.31.112.174    portal.playcloud.ais.co.th
+119.31.112.174    admin-ncp.playcloud.ais.co.th
+119.31.112.174  kubernetes.sla.ais.local
+110.49.0.241 kubernetes.tls.ais.local
+119.31.112.174 nats-console-sla.playcloud.ais.co.th
+110.49.0.241 nats-console-tls.playcloud.ais.co.th
+
+10.16.101.11	portal-beta.nipa.cloud
+10.16.200.152	km-dev.nipacloud.local
+10.16.0.101	km.nipacloud.local
+10.16.101.11	r.nipacloud.local
+
+# my-kubernetes-cluster public cloud
+103.74.253.67 kubernetes webapp.gitops.local argocd.gitops.local n8n.local wordpress.app.local
