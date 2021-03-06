@@ -16,7 +16,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 echo "+ Download and install font"
 mkdir ~/fonts
 wget -O ~/fonts/MesloNf.ttf 'https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf'
-file ~/fonts/MesloNf.ttf
+[ command -v file &> /dev/null ] && file ~/fonts/MesloNf.ttf
 
 echo "+ Install zsh theme"
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k

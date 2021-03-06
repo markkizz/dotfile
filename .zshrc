@@ -146,6 +146,4 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-. /home/nc-user/.asdf/asdf.sh
-
-. /home/nc-user/.asdf/asdf.sh
+[ -f $HOME/.asdf/asdf.sh ] && . $HOME/.asdf/asdf.sh
