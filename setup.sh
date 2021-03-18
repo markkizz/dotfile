@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# TODO: Create manual setup flag eg. --manaul
+
 echo "🍰 bootstrapping system environment setup..."
 OS=$(bash ./utils/getos)
 

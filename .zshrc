@@ -130,9 +130,10 @@ export BIN_PATH=${HOME}/opt/bin
 # # Path to build go
 # export GO_PATH=/usr/local/go/bin
 # export GOPATH=$(go env GOPATH)
-
+export MERGE_PATH="$BIN_PATH"
 # # Merge executable PATH
 # export PATH=${BIN_PATH}:${GO_PATH}:${PATH}
+export PATH="$PATH:$MERGE_PATH"
 
 
 # C_CPP lib config
@@ -144,3 +145,7 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+. /home/nc-user/.asdf/asdf.sh
+
+. /home/nc-user/.asdf/asdf.sh

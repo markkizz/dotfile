@@ -1,7 +1,7 @@
 FROM debian:bullseye-slim
 
 # Install dependencies for dotbo
-RUN apt-get update && apt-get install sudo git python3 -y
+RUN apt-get update && apt-get install sudo git python3 build-essential vim curl wget zsh  -y
 
 
 # Install dependencies
@@ -34,4 +34,4 @@ RUN ["./install"]
 
 # Start zsh shell
 WORKDIR /home/markkizz
-CMD zsh
+CMD bash

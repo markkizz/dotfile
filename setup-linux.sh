@@ -10,10 +10,12 @@ fi
 echo "🍰 configuring linux installation..."
 
 linux_scripts="$(\ls linux/*.sh)"
+linux_deps_scripts="$(\ls linux/**/*.sh)"
 
-for script in $linux_scripts
+for script in $linux_scripts $linux_deps_scripts
 do
   $script
+  #echo "$script"
 done
 
 # automatically setup common CLI environment with scripts.

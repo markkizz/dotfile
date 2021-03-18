@@ -8,3 +8,12 @@ for script in $common_scripts
 do
   $script
 done
+
+echo "🍰 configuring gitconfig... "
+
+git_configs="$(\ls gitconfig/*.sh)"
+
+for script in $git_configs
+do
+  $script
+done
