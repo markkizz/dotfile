@@ -14,17 +14,20 @@ locales
 # Dependencies
 rlwrap
 expect
+libssl-dev
+zlib1g-dev
 
 # Processor
 jq
 
 # Search
 grep
-ripgrep
-fd-find
+# ripgrep
+# fd-find
 silversearcher-ag
 
 # Editor
+vim
 neovim
 
 # Terminal Multiplexer
@@ -32,14 +35,14 @@ tmux
 screen
 
 # Shells
-# zsh
+zsh
 # bash
 # fish
 
 # Essential Utilities
 
-exa
-fzf
+# exa
+# fzf
 
 # Log Navigator
 lnav
@@ -55,14 +58,17 @@ colordiff
 
 # Git Tools
 tig
-hub
+# hub
 gist
+
+# File Download
+file
 
 # File Watcher
 entr
 
 # Useful utilities
 htop
-tldr
-neofetch
+# tldr
+# neofetch
 editorconfig

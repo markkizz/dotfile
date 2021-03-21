@@ -14,5 +14,5 @@ else
   ./setup-linux.sh
 fi
 
-GREEN='\033[0;32m'
-echo "${GREEN}***** Done!! ******"
+# GREEN='\033[0;32m'
+echo "**************** Done!! ****************"

@@ -6,6 +6,11 @@
 
 - link:
     ~/.Brewfile: Brewfile
+    ~/.config:
+      glob: true
+      path: ./.config/*
+      relink: true
+      create: true
     ~/.zshrc:
       force: true
       path: ./.zshrc
@@ -16,7 +21,7 @@
       path: bin/*
       relink: true
       create: true
-    ~/.tool-version:
+    ~/.tool-versions:
       path: ./.tool-versions
 
 - create:

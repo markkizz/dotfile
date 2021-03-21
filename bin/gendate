@@ -1,9 +1,10 @@
 #!/bin/bash
 
-local day_month=$1
-local current_time=$(date +'%T')
-local time_zone=$(date +'%z')
-local year=$(date +'%Y')
+# Usage: gendate "2 mar" ->  Date: Tue Mar 2 19:42:17 2021 +0700
+day_month=$1
+current_time=$(date +'%T')
+ime_zone=$(date +'%z')
+year=$(date +'%Y')
 if [ -n "$2" ]; then
   year="$2"
 fi
