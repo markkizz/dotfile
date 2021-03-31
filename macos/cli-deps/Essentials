@@ -1,5 +1,4 @@
 # CLI Dependencies
-brew "sqlite"
 brew "readline"
 brew "rlwrap"
 brew "expect"

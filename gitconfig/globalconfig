@@ -1,0 +1,4 @@
+[includeIf "gitdir:~/markkizz/github"]
+  path = ~/markkizz/github/.gitconfig
+[includeIf "gitdir:~/markkizz/NCP"]
+  path = ~/markkizz/NCP/.gitconfig

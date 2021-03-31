@@ -17,6 +17,10 @@ export ZSH="$HOME/.oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && . "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+# [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && . "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
@@ -87,8 +91,8 @@ source $ZSH/oh-my-zsh.sh
 
 alias ll="ls -alh"
 alias ga="git add"
-alias mongo="~/Downloads/nosqlbooster4mongo*.AppImage"
 alias clearnode="find . -name "node_modules" -type d -prune -exec rm -rf '{}' +"
+alias switch86="arch -x86_64 zsh"
 
 # User configuration
 
@@ -130,9 +134,12 @@ export BIN_PATH=${HOME}/opt/bin
 # # Path to build go
 # export GO_PATH=/usr/local/go/bin
 # export GOPATH=$(go env GOPATH)
-export MERGE_PATH="$BIN_PATH"
+export BREW_PATH=/opt/homebrew/bin
+export MERGE_PATH="$BIN_PATH:$BREW_PATH"
 # # Merge executable PATH
 # export PATH=${BIN_PATH}:${GO_PATH}:${PATH}
+
+
 export PATH="$PATH:$MERGE_PATH"
 
 
@@ -146,4 +153,6 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-[ -f $HOME/.asdf/asdf.sh ] && . $HOME/.asdf/asdf.sh
+# [ -f $HOME/.asdf/asdf.sh ] && . $HOME/.asdf/asdf.sh
+
+. /opt/homebrew/opt/asdf/asdf.sh
