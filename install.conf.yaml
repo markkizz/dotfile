@@ -15,7 +15,9 @@
       force: true
       path: ./.zshrc
       relink: true
-    ~/.p10k.zsh: ./.p10k.zsh
+    ~/.p10k.zsh:
+      path: ./.p10k.zsh
+      if: "[ `uname` = Darwin ]"
     ~/.dotfiles: .
     ~/opt/bin/:
       glob: true
