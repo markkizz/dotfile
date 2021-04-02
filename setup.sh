@@ -8,7 +8,7 @@ if [[ $machine == *"UNKNOWN"* ]]; then
   exit 1
 fi
 
-if [ $OS == *"Mac" ]; then
+if [ `uname` = Darwin ]; then
   ./setup-macos.sh
 else
   ./setup-linux.sh
