@@ -1,6 +1,13 @@
 #!/usr/bin/env bash
 
-[[ command -v brew ]] && brew bundle --file ~/dotfiles/Brewfile
+if [[ command -v brew ]]
+then
+  echo "📦 Installing from brewfile..."
+  brew bundle --file ~/dotfiles/Brewfile
+else
+  echo "❌ brew doesn't exist."
+fi
+# [[ command -v brew ]] && brew bundle --file ~/dotfiles/Brewfile
 
 # cd "$(dirname "${BASH_SOURCE[0]}")"
 
