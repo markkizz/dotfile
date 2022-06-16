@@ -5,10 +5,10 @@ then
   export PATH=$PATH:~/homebrew/bin
 fi
 
-echo "📦 Installing from Brewfile..."
+echo "🔨 ==> Installing from Brewfile..."
 brew bunddle
 brew bundle --file ~/dotfiles/Brewfile
-echo "✅ Brewfile installed"
+echo "✅ ==> Brewfile installed\n"
 
 # [[ command -v brew ]] && brew bundle --file ~/dotfiles/Brewfile
 

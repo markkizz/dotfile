@@ -3,19 +3,25 @@ then
   export PATH=$PATH:~/homebrew/bin
 fi
 
-if ! command -v asdf &> /dev/null
-then
-  git clone https://github.com/kiurchv/asdf.plugin.zsh $HOME/.oh-my-zsh/custom/plugins/asdf
-  echo -e "\n. $(brew --prefix asdf)/libexec/asdf.sh" >> ${ZDOTDIR:-~}/.zshrc
+# if ! command -v asdf &> /dev/null
+# then
+  # git clone https://github.com/kiurchv/asdf.plugin.zsh $HOME/.oh-my-zsh/custom/plugins/asdf
 
+
+  # echo "export PATH="$PATH:$HOME/.asdf/bin" >> ~/.zshrc
+if command -v asdf
+then
+  echo ""
+  echo "🔨 ==> install asdf plugin"
+  echo -e "\n. $(brew --prefix asdf)/libexec/asdf.sh" >> ${ZDOTDIR:-~}/.zshrc
+  # install node js
   asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
 
-  echo "export PATH="$PATH:$HOME/.asdf/bin" >> ~/.zshrc
+  asdf install nodejs   14.16.0
+  asdf install nodejs   16.14.0
 
-fi
-  # install node js
-  asdf install nodejs latest
-  asdf global nodejs latest
+  asdf global nodejs 16.14.0
+  echo "✅ ==> asdf installed!\n"
 else
-#  "❌ asdf does not exist"
-  echo "skip install asdf"
+ echo "❌ ==> asdf does not exist"
+fi

@@ -157,3 +157,14 @@ export LD_LIBRARY_PATH=/usr/local/lib
 # [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# if command -v brew
+# then
+#   # if command -v asdf
+#     # then
+#       . "$(brew --prefix asdf)"/libexec/bin
+#     # if
+# fi
+
+# /Users/markkizz/.asdf/shims:/opt/homebrew/opt/asdf/libexec/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Library/Apple/usr/bin:/Users/markkizz/opt/bin:/opt/homebrew/bin:/Users/markkizz/opt/bin:/opt/homebrew/bin:/Users/markkizz/opt/bin:/opt/homebrew/bin
+. /opt/homebrew/opt/asdf/libexec/asdf.sh

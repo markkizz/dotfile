@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-echo "📦 + Installing oh_my_zsh..."
+echo "🔨 ==> Installing oh_my_zsh..."
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
@@ -8,4 +8,4 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/
 
 source ~/.zshrc
 
-echo "✅oh_my_zsh finished\n"
+echo "✅ ==> oh_my_zsh installed\n"
