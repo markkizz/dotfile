@@ -27,6 +27,7 @@
     ~/.tool-versions:
       path: ./.tool-versions
     ~/.gitconfig: ./gitconfig/globalconfig
+    ~/.tmux.conf: ./.tmux.conf
 
 - create:
     - ~/markkizz
