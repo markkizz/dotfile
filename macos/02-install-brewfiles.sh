@@ -1,14 +1,15 @@
 #!/usr/bin/env bash
 
-if command -v brew
+if ! command -v brew
 then
-  echo "📦 Installing from Brewfile..."
-  brew bunddle
-  brew bundle --file ~/dotfiles/Brewfile
-  echo "✅ Brewfile installed"
-else
-  echo "❌ brew doesn't exist."
+  export PATH=$PATH:~/homebrew/bin
 fi
+
+echo "📦 Installing from Brewfile..."
+brew bunddle
+brew bundle --file ~/dotfiles/Brewfile
+echo "✅ Brewfile installed"
+
 # [[ command -v brew ]] && brew bundle --file ~/dotfiles/Brewfile
 
 # cd "$(dirname "${BASH_SOURCE[0]}")"
