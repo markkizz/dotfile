@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-if [[ command -v brew ]]
+if command -v brew
 then
   echo "📦 Installing from Brewfile..."
   brew bunddle
@@ -44,4 +44,3 @@ fi
 #   sha1sum Brewfile > Brewfile.sha1
 #   echo "✅ Installed brewfile!"
 # fi
-
