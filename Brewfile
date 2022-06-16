@@ -35,8 +35,8 @@ brew "tmux"
 brew "screen"
 
 # Shells
-brew "zsh"
-brew "bash"
+# brew "zsh"
+# brew "bash"
 # brew "fish"
 
 # Essential Utilities
@@ -97,12 +97,6 @@ brew "emojify"
 brew "neofetch"
 brew "openssh"
 
-# K8S IDE
-cask "lens"
-
-# VPN
-cask "tunnelblick"
-
 ######################################
 
 cask "osxfuse"
@@ -126,7 +120,7 @@ brew "ffmpeg"
 # brew "cmus", link: false
 # brew "cocoapods"
 # brew "crystal"
-brew "deno"
+# brew "deno"
 brew "exiftool"
 brew "fdupes"
 brew "figlet"
@@ -134,7 +128,7 @@ brew "gdb"
 brew "gh"
 brew "ghc"
 brew "gnupg"
-brew "go"
+# brew "go"
 brew "graphviz"
 brew "highlight"
 brew "imagemagick"
@@ -175,6 +169,13 @@ brew "litecli"
 # brew "koekeishiya/formulae/yabai"
 # brew "railwaycat/emacsmacport/emacs-mac", args: ["with-imagemagick", "with-no-title-bars", "with-rsvg", "with-spacemacs-icon"], link: false
 # brew "yqrashawn/goku/goku"
+
+########### asdf deps ############
+brew "gpg"
+brew "gawk"
+
+########### Brew Cask ############
+
 # cask "adobe-creative-cloud"
 # cask "airtable"
 # cask "alacritty"
@@ -200,9 +201,9 @@ cask "font-fira-mono-nerd-font"
 # cask "font-jetbrains-mono"
 # cask "font-jetbrainsmono-nerd-font"
 # cask "google-chrome"
-cask "google-cloud-sdk"
+# cask "google-cloud-sdk"
 # cask "grammarly"
-cask "graphql-playground"
+# cask "graphql-playground"
 # cask "hammerspoon"
 # cask "handbrake"
 # cask "hey"
@@ -252,3 +253,13 @@ cask "visual-studio-code"
 # cask "webviewscreensaver"
 # cask "wireshark"
 # cask "zoomus"
+cask "mysqlworkbench"
+cask "fork"
+cask "microsoft-teams"
+
+# K8S IDE
+cask "lens"
+
+# VPN
+# cask "tunnelblick"
+cask "openvpn-connect"

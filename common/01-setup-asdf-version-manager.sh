@@ -35,7 +35,7 @@ setup_asdf() {
   asdf update
 
   # for plugin in nodejs python ruby
-  for plugin in nodejs ruby
+  for plugin in nodejs golang
   do
     echo "ℹ️ Adding $plugin plugin..."
     asdf plugin add $plugin

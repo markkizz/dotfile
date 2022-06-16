@@ -2,8 +2,10 @@
 
 if [[ command -v brew ]]
 then
-  echo "📦 Installing from brewfile..."
+  echo "📦 Installing from Brewfile..."
+  brew bunddle
   brew bundle --file ~/dotfiles/Brewfile
+  echo "✅ Brewfile installed"
 else
   echo "❌ brew doesn't exist."
 fi

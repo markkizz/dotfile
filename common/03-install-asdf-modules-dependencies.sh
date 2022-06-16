@@ -21,6 +21,7 @@ sudo apt-get install python3-pip python-pip -y
 if command -v pip3 &> /dev/null
 then
   echo "++ installing python dependencies"
+  # TODO: Essential nvim
   pip3 install --upgrade setuptools
   python3 -m pip install --user --upgrade pynvim
 fi

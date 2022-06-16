@@ -85,6 +85,7 @@ yarn
 node
 zsh-autosuggestions
 zsh-syntax-highlighting
+asdf
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -93,6 +94,10 @@ alias ll="ls -alh"
 alias ga="git add"
 alias clearnode="find . -name "node_modules" -type d -prune -exec rm -rf '{}' +"
 alias switch86="arch -x86_64 zsh"
+
+alias nodereshim="reshim nodejs"
+
+alias web="webstorm"
 
 # User configuration
 
@@ -148,11 +153,7 @@ export LD_LIBRARY_PATH=/usr/local/lib
 
 ###############################
 
-export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+# export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-# [ -f $HOME/.asdf/asdf.sh ] && . $HOME/.asdf/asdf.sh
-
-. /opt/homebrew/opt/asdf/asdf.sh

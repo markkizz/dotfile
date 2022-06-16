@@ -9,10 +9,11 @@ then
   exit 0
 fi
 
-if [ `uname` == Darwin ]
-then
-  export SDKROOT="$(xcrun --sdk macosx --show-sdk-path)"
-fi
+# TODO: setup asdf for macos
+#if [ `uname` == Darwin ]
+#then
+  #export SDKROOT="$(xcrun --sdk macosx --show-sdk-path)"
+#fi
 
 echo "🍰 installing asdf modules..."
 

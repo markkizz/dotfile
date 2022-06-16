@@ -1,5 +1,5 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 
-echo "Essential: Install Homebrew..."
-# mkdir homebrew && curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew
-curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh
+echo " 📦 Installing Homebrew..."
+yes | /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+echo "✅ Homebrew installed!"
