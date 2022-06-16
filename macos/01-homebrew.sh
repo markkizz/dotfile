@@ -3,4 +3,5 @@
 echo " 📦 Installing Homebrew..."
 #yes | /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 yes | mkdir homebrew && curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew
+export PATH=$PATH:/opt/homebrew/bin
 echo "✅ Homebrew installed!"

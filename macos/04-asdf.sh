@@ -1,6 +1,5 @@
 if ! command -v asdf &> /dev/null
 then
-  echo "<the_command> could not be found"
   git clone https://github.com/kiurchv/asdf.plugin.zsh $HOME/.oh-my-zsh/custom/plugins/asdf
   echo -e "\n. $(brew --prefix asdf)/libexec/asdf.sh" >> ${ZDOTDIR:-~}/.zshrc
 
