@@ -1,5 +1,7 @@
 " Yank will copy into the global clipboard!
 set clipboard=unnamed
+" surrounded word
+set surround
 
 " Allow the use of mouse!
 set mouse=a
