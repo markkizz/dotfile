@@ -99,11 +99,11 @@ brew "openssh"
 
 ######################################
 
-cask "osxfuse"
-cask "xquartz"
+# cask "osxfuse"
+# cask "xquartz"
 # brew "ansifilter"
 # brew "sqlite"
-brew "asciinema"
+# brew "asciinema"
 brew "automake"
 # brew "bfg"
 brew "blueutil"
