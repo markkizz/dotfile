@@ -1,12 +1,12 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 
 if ! command -v brew
 then
-  export PATH=$PATH:~/homebrew/bin
+  export PATH=$PATH:~/.homebrew/bin
 fi
 
 echo "🔨 ==> Installing from Brewfile..."
-brew bunddle
+brew bundle
 brew bundle --file ~/dotfiles/Brewfile
 echo "✅ ==> Brewfile installed\n"
 

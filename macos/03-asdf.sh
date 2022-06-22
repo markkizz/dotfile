@@ -1,6 +1,8 @@
+#!/usr/bin/env zsh
+
 if ! command -v brew
 then
-  export PATH=$PATH:~/homebrew/bin
+  export PATH=$PATH:~/.homebrew/bin
 fi
 
 # if ! command -v asdf &> /dev/null
