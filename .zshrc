@@ -139,7 +139,9 @@ export BIN_PATH=${HOME}/opt/bin
 # # Path to build go
 # export GO_PATH=/usr/local/go/bin
 # export GOPATH=$(go env GOPATH)
-export BREW_PATH=/opt/homebrew/bin
+# export BREW_PATH=/opt/homebrew/bin
+export BREW_PATH=~/.homebrew/bin
+# export BREW_PATH="$(brew --prefix asdf)"
 export MERGE_PATH="$BIN_PATH:$BREW_PATH"
 # # Merge executable PATH
 # export PATH=${BIN_PATH}:${GO_PATH}:${PATH}
@@ -158,13 +160,12 @@ export LD_LIBRARY_PATH=/usr/local/lib
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# if command -v brew
-# then
-#   # if command -v asdf
-#     # then
-#       . "$(brew --prefix asdf)"/libexec/bin
-#     # if
-# fi
-
-# /Users/markkizz/.asdf/shims:/opt/homebrew/opt/asdf/libexec/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Library/Apple/usr/bin:/Users/markkizz/opt/bin:/opt/homebrew/bin:/Users/markkizz/opt/bin:/opt/homebrew/bin:/Users/markkizz/opt/bin:/opt/homebrew/bin
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
+# fix asdf shim binary not fouded see: https://github.com/ohmyzsh/ohmyzsh/issues/10484#issuecomment-997545691
+if command -v brew &>/dev/null
+then
+  if command -v asdf &>/dev/null
+  then
+    unset ASDF_DIR
+    source $(brew --prefix asdf)/libexec/asdf.sh
+  fi
+fi
