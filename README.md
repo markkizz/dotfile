@@ -10,6 +10,9 @@
 - Custom useful binary function
 - Ngrok
 
+## MacOS Apple silicon Installation
+- Install `xcode-select` --install or git
+- Install `softwareupdate --install-rosetta --agree-to-license`
 
 ### TODO
 
