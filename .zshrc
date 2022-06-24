@@ -86,6 +86,7 @@ node
 zsh-autosuggestions
 zsh-syntax-highlighting
 asdf
+vi-mode
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -94,6 +95,7 @@ alias ll="ls -alh"
 alias ga="git add"
 alias clearnode="find . -name "node_modules" -type d -prune -exec rm -rf '{}' +"
 alias switch86="arch -x86_64 zsh"
+alias switcharm="arch -arm64 zsh"
 
 alias nodereshim="reshim nodejs"
 
@@ -160,7 +162,7 @@ export LD_LIBRARY_PATH=/usr/local/lib
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# fix asdf shim binary not fouded see: https://github.com/ohmyzsh/ohmyzsh/issues/10484#issuecomment-997545691
+# fix asdf shim binary not founded see: https://github.com/ohmyzsh/ohmyzsh/issues/10484#issuecomment-997545691
 if command -v brew &>/dev/null
 then
   if command -v asdf &>/dev/null
