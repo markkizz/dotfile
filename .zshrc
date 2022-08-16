@@ -93,6 +93,9 @@ source $ZSH/oh-my-zsh.sh
 
 alias ll="ls -alh"
 alias ga="git add"
+alias gcd="git checkout develop"
+alias gcds="git checkout dev-stable"
+alias gcm="git checkout master"
 alias clearnode="find . -name "node_modules" -type d -prune -exec rm -rf '{}' +"
 alias switch86="arch -x86_64 zsh"
 alias switcharm="arch -arm64 zsh"
@@ -141,9 +144,10 @@ export BIN_PATH=${HOME}/opt/bin
 # # Path to build go
 # export GO_PATH=/usr/local/go/bin
 # export GOPATH=$(go env GOPATH)
-# export BREW_PATH=/opt/homebrew/bin
-export BREW_PATH=~/.homebrew/bin
+export BREW_PATH=/opt/homebrew/bin
+# export BREW_PATH=~/.homebrew/bin
 # export BREW_PATH="$(brew --prefix asdf)"
+# export MERGE_PATH="$BIN_PATH:$BREW_PATH"
 export MERGE_PATH="$BIN_PATH:$BREW_PATH"
 # # Merge executable PATH
 # export PATH=${BIN_PATH}:${GO_PATH}:${PATH}

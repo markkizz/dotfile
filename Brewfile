@@ -100,6 +100,7 @@ cask "mysqlworkbench"
 cask "fork"
 cask "microsoft-teams"
 cask "rectangle"
+cask "raycast"
 
 # K8S IDE
 cask "lens"
@@ -190,6 +191,9 @@ brew "editorconfig"
 brew "emojify"
 brew "neofetch"
 brew "openssh"
+
+# Network
+brew "iproute2mac"
 
 ######################################
 
