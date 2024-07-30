@@ -145,10 +145,12 @@ export BIN_PATH=${HOME}/opt/bin
 # export GO_PATH=/usr/local/go/bin
 # export GOPATH=$(go env GOPATH)
 export BREW_PATH=/opt/homebrew/bin
+export TEMP_CURL=/opt/homebrew/opt/curl/bin/curl
+export YARN_ASDF_GLOBAL=$HOME/.yarn/bin
 # export BREW_PATH=~/.homebrew/bin
 # export BREW_PATH="$(brew --prefix asdf)"
 # export MERGE_PATH="$BIN_PATH:$BREW_PATH"
-export MERGE_PATH="$BIN_PATH:$BREW_PATH"
+export MERGE_PATH="$BIN_PATH:$BREW_PATH:$TEMP_CURL:YARN_ASDF_GLOBAL"
 # # Merge executable PATH
 # export PATH=${BIN_PATH}:${GO_PATH}:${PATH}
 
@@ -158,6 +160,8 @@ export PATH="$PATH:$MERGE_PATH"
 
 # C_CPP lib config
 export LD_LIBRARY_PATH=/usr/local/lib
+
+export DOCKER_DEFAULT_PLATFORM=linux/amd64
 
 ###############################
 
@@ -175,3 +179,12 @@ then
     source $(brew --prefix asdf)/libexec/asdf.sh
   fi
 fi
+export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
+
+# pnpm
+export PNPM_HOME="/Users/markkizz/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end

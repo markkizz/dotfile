@@ -1,0 +1,23 @@
+#!/bin/sh -e
+# Helper script to map ports to other servers.
+
+# Use Case
+# had a database that was only accesible in the VPC on aws, so i created an dev intance and did a ssh tunnel to that dev instance with netcat mapping the port to the database
+
+# Sample Usage
+# Forward all request from local 5432 to remote host google.com port 80
+
+# ./nc-proxy.sh 5432 google.com 80
+
+if [ $# != 3 ]
+then
+    echo "usage: $0 <src-port> <dst-host> <dst-port>"
+    exit 0
+fi
+
+TMP=`mktemp -d`
+PIPE=$TMP/pipe
+trap 'rm -rf "$TMP"' EXIT
+mkfifo -m 0600 "$PIPE"
+
+nc -k -l "$1" < "$PIPE" | nc "$2" "$3" > "$PIPE"
